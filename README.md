@@ -1,3 +1,20 @@
+# Notes from Karel
+
+```bash
+pip install torch torchvision torchaudio
+pip install -r requirements.txt
+```
+## You can get weights from here
+https://github.com/facebookresearch/svoice/issues/31
+
+but both of those are working very poorly
+
+i did pip freeze > requirements.txt to get to update the versions that worked for me 
+
+
+# -----
+
+
 # Speaker Voice Separation using Neural Nets
 [![Hugging Face](https://img.shields.io/badge/Demo-%F0%9F%A4%97%20Hugging%20Face-blue)](https://huggingface.co/spaces/ahmedghani/svoice_demo)
 

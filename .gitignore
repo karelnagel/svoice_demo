@@ -1,0 +1,6 @@
+.venv/
+separated/
+__pycache__/
+whisper_checkpoint/
+outputs/
+input

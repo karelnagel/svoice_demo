@@ -53,7 +53,8 @@ def separator(audio, rec_audio, example):
     for file in sorted(separated_files):
         separated_audio = sio.wavfile.read(file)
         outputs['transcripts'].append(speech_recognition_pipeline(separated_audio[1])['text'])
-    return sorted(separated_files) + outputs['transcripts']
+    res= sorted(separated_files) + outputs['transcripts']
+    print(res)
     
 def set_example_audio(example: list) -> dict:
     return gr.Audio.update(value=example[0])

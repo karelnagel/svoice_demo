@@ -61,9 +61,10 @@ def save_wavs(estimate_source, mix_sig, lengths, filenames, out_dir, sr=16000):
         for c in range(C):
             write(flat_estimate[i][c], filename + f"_s{c + 1}.wav", sr=sr)
 
+import soundfile as sf
 
 def write(inputs, filename, sr=8000):
-    librosa.output.write_wav(filename, inputs, sr, norm=True)
+    sf.write(filename, inputs, sr)
 
 def separate_demo(mix_dir='mix/', batch_size=1, sample_rate=16000):
     mix_dir, mix_json = mix_dir, None
